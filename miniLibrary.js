@@ -2,6 +2,7 @@ const ambilData = document.getElementsByTagName('button')[0]
 ambilData.addEventListener('click', function() {
   new gridjs.Grid({
     columns: ["Name", "Email", "Phone Number","Alamat"],
+    search: true,
     pagination:true,
     sort:true,
     data: [
