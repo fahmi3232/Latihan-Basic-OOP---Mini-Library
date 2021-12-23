@@ -1,4 +1,6 @@
-new gridjs.Grid({
+const ambilData = document.getElementsByTagName('button')[0]
+ambilData.addEventListener('click', function() {
+  new gridjs.Grid({
     columns: ["Name", "Email", "Phone Number","Alamat"],
     pagination:true,
     sort:true,
@@ -10,3 +12,5 @@ new gridjs.Grid({
       ["Rhesa", "rhesa111@gmail.com", "08985554431", "Banyumas"],
     ]
 }).render(document.getElementById("wrapper"));
+})
+
